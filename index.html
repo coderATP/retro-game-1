@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML5 RETRO GAME 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="startMessage">
+        <p>Press here to start</p>
+    </div>
+    <div id="buttonsDiv">
+        
+        <div id="leftBtns">
+            <button class="directionalButton" id='Left' value = 'ArrowLeft'>L</button>
+            <button class="directionalButton" id='Right' value = 'ArrowRight'>R</button>
+        </div>
+        
+        <div id="rightBtns">
+            <button class="attackBtn" id='attack1' value = 'attack1'>A</button>
+            <button class="attackBtn" id='attack2' value = 'attack2'>B</button>
+            <button class="attackBtn" id='attack3' value = 'attack3'>C</button>
+            <button class="attackBtn" id='attack4' value = 'attack4'>D</button>
+        </div>
+    </div>
+    
+    <!--images-->
+    <img src = './images/eaglemorph.png' id = 'eaglemorph' alt = 'eaglemorph'/>
+    <img src = './images/lobstermorph.png' id = 'lobstermorph' alt = 'lobstermorph'/>
+    <img src = './images/enemyProjectile.png' id = 'enemyProjectile' alt = 'enemyProjectiles'/>
+    <img src = './images/squidmorph.png' id = 'squidmorph' alt = 'squidmorph'/>
+    <img src = './images/boss8.png' id = 'boss8' alt = 'boss8'/>
+
+    <img src = './images/rhinomorph.png' id = 'rhinomorph' alt = 'rhinomorph'/>
+    <img src = './images/boss.png' id = 'boss' alt = 'boss'/>
+    <img src = './images/beetlemorph.png' id = 'beetlemorph' alt = 'beetlemorph'/>
+    <img src = './images/player.png' id = 'player' alt = 'player'/>
+    <img src = './images/player_jets.png' id = 'player_jets' alt = 'player_jets'/>
+    
+    <!--Canvas element-->
+    <canvas width = 500 height = 700 id= "canvas"></canvas>
+
+    <!--Script tags-->
+    <script src="./src/enemy.js"></script>
+    <script src="./src/wave.js"></script>
+  
+    <script src="./src/projectile.js"></script>
+    <script src="./src/laser.js"></script>
+    <script src="./src/player.js"></script>
+   
+    <script src="./src/game.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
